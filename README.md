@@ -1,11 +1,8 @@
-# TransE
-A TensorFlow implementation of TransE model in [Translating Embeddings for Modeling
-Multi-relational Data](https://www.utc.fr/~bordesan/dokuwiki/_media/en/transe_nips13.pdf)
+# A Tensorflow Implementation of CKGE
+### Author: BinLingNie
 
-# Performance
-| Datasets | MeanRank(Raw) | MeanRank(Filter) | Hits@10(Raw)(%) | Hits@10(Filter)(%) | Epochs |
-| :------: | :-----------: | :--------------: | :-------------: | :----------------: | :----: |
-| WN18 | 246 | 234 | 79.6 | 93.5 | 800 |
-| FB15k | 156 | 51 | 51.1 | 81.3 | 1000 |
+This is a TensorFlow implementation of of [CKGE](https://github.com/BinLingNie/CKGE.git), as described in our paper:
+Joint Knowledge Base Embedding with Neighborhood Context
+#### Requirements
 
-Download the datasets(WN18 and FB15k) from [this repo](https://github.com/thunlp/KB2E).
+Tensorflow >=1.2 is required.

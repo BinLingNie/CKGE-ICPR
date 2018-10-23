@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+CUDA_VISIBLE_DEVICES=0 \
+python main.py \
+--data_dir ../data/FB15k/ \
+--skp_file ../data/emd/FB15k/ske_fb15k_100_1_1000-embs.npy \
+--embedding_dim 100 \
+--margin_value 1 \
+--batch_size 5000 \
+--learning_rate 0.003 \
+--n_generator 24 \
+--n_rank_calculator 24 \
+--eval_freq 100 \
+--max_epoch 1000
+
+CUDA_VISIBLE_DEVICES=0 \
+python main.py \
+--data_dir ../data/FB15k/ \
+--skp_file ../data/emd/FB15k/ske_fb15k_100_2_1000-embs.npy \
+--embedding_dim 100 \
+--margin_value 1 \
+--batch_size 5000 \
+--learning_rate 0.003 \
+--n_generator 24 \
+--n_rank_calculator 24 \
+--eval_freq 100 \
+--max_epoch 1000
+
+CUDA_VISIBLE_DEVICES=0 \
+python main.py \
+--data_dir ../data/FB15k/ \
+--skp_file ../data/emd/FB15k/ske_fb15k_100_05_1000-embs.npy \
+--embedding_dim 100 \
+--margin_value 1 \
+--batch_size 5000 \
+--learning_rate 0.003 \
+--n_generator 24 \
+--n_rank_calculator 24 \
+--eval_freq 100 \
+--max_epoch 1000

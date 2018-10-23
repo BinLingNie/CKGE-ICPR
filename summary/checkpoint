@@ -1,0 +1,2 @@
+model_checkpoint_path: "TransE.ckpt"
+all_model_checkpoint_paths: "TransE.ckpt"
